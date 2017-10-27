@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Home Page</title>
+        <link rel="stylesheet" href="dist/main.bundle.css">
+    </head>
+    <body style= "background-color: blue;">
+
+        <div id="header-placeholder"></div>
+
+        <div class="container">
+            <div class="jumbotron", style= "background-color: #E07816">
+                <h1 style= "font-size: 500%", style= "font-family: Verdana" ><center>ABFitness</center></h1>
+                <p style= "font-family: impact;"><center>Getting Fit has never been so Lit</center></p>
+            
+                <center><a href="index.html" class="btn btn-primary" style= "background-color: blue">Return Home</a></center>
+            
+            </div>
+          
+            <div class="jumbotron", style= "background-color: #E07816">
+                <center><p style="font-size: 250%">Progress So Far And Upcoming Goals...</p></center>
+                    <center><p>
+                        I am going to use this page to explain what I have done so far, and I am still hoping to accomplish.
+                        I was able to create a list of workout routines that are triggered by buttons related to the various wokrouts.
+                        To make sure the buttons only triggered once, I replaced them with checkmarks on command. The list also has a 
+                        delete button which cancels the list with the intention of allowing resubmission. The list does delete now, but 
+                        the resubmission aspect is still flawed. I also plan on shifting that list to this workouts page. I intend to create 
+                        a save button for the list, which will transfer the data to a my profile account to track consistant progress. I will also soon 
+                        create a nutrition section to the project which should encompass things such as caloric intake and links to nutrition websites. 
+                        When all of the important Javascript is completed, i intend to go back and seperate the CSS from the HTML pages, to make the project
+                        cleaner and better organized. 
+                    </p></center>
+                </div> 
+
+        <script>
+                var navProperties = {
+                    mainNav: "_nav.html",
+                    currentSection: "signup"
+                };
+        </script>  
+        <script src="dist/bundle.js" >
+        </script> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="navigation.js">
+        </script>
+
+        <script src="dist/index.js">
+        </script>
+       
+    </body>
+</html>

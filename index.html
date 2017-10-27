@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Home Page</title>
+        <link rel="stylesheet" href="dist/main.bundle.css">
+    </head>
+    <body style= "background-color: blue;">
+
+        <div id="header-placeholder"></div>
+
+        <div class="container">
+            <div class="jumbotron", style= "background-color: #E07816">
+                <h1 style= "font-size: 500%", style= "font-family: Verdana" ><center>ABFitness</center></h1>
+                <p style= "font-family: impact;"><center>Getting Fit Has Never Been So Lit</center></p>  
+        </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" >
+                        <img class="card-img-top" src=https://www.fitnessmagazine.com/sites/fitnessmagazine.com/files/styles/slide/public/9-pushup-sm.gif?itok=AinpzHuMalt="Card image cap">
+                        <div class="card-body" style= "background-color: #E07816;">
+                            <h4 class="card-title">Push Ups</h4>
+                            <p class="card-text">Challenge yourself by setting your goals high. Aim for 50 pushups today!</p>
+                            <center><button id="b1" type ="submit1" onclick="myFunction1()" style="background-color: blue">I did it!</button></center>
+                            <center><img id="i1" style="display:none" src="http://www.iconsdb.com/icons/download/green/checked-checkbox-512.png" width="50px" height="50px"></center>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+                        <div class="card" >
+                                <img class="card-img-top" src="http://www.garmaonhealth.com/wp-content/uploads/2017/01/chinup.gif" alt="Card image cap">
+                                <div class="card-body" style= "background-color: #E07816;">
+                                    <h4 class="card-title">Pull Ups</h4>
+                                    <p class="card-text">Pullups are tough, think you can go for 20? We think you can!.</p>
+                                    <center><button id="b2" type ="submit2" onclick="myFunction2()" style="background-color: blue">I did it!</button></center>
+                                    <center><img id="i2" style="display:none" src="http://www.iconsdb.com/icons/download/green/checked-checkbox-512.png" width="50px" height="50px"></center>
+                                    
+                                </div>
+                            </div>
+                            
+                </div>
+                <div class="col-md-3">
+                        <div class="card" >
+                                <img class="card-img-top" src="http://img13.laughinggif.com/pic/HTTP2Fzc2V0cy5tZW5zaGVhbHRoLmNvLnVrL21haW4vYXNzZXRzL3NpdC11cHMuZ2lmP210aW1lPTE0NDc2OTQ2Mzklog.gif" alt="Card image cap">
+                                <div class="card-body" style= "background-color: #E07816;"> 
+                                    <h4 class="card-title">Sit Ups</h4>
+                                    <p class="card-text">Got some extra time? Then drop down and give me 50. We know you got this!</p>
+                                    <center><button id="b3" type ="submit3" onclick="myFunction3()" onclick="addimage()" style="background-color: blue">I did it!</button></center>
+                                    <center><img id="i3" style="display:none" src="http://www.iconsdb.com/icons/download/green/checked-checkbox-512.png" width="50px" height="50px"></center>
+                                    
+                                </div>
+                            </div>
+                    
+                </div>
+                <div class="col-md-3">
+                    <div class="card" >
+                            <img class="card-img-top" src="http://cos.h-cdn.co/assets/cm/14/28/480x270/53a06d218267e_-_correctsquat.gif" alt="Card image cap">
+                            <div class="card-body" style= "background-color: #E07816;"> 
+                                <h4 class="card-title">Squats</h4>
+                                <p class="card-text">Let's start putting those legs to work. Give us your best effort, how about 40?!</p>
+                                <center><button id="b4" type ="submit4" onclick="myFunction4()" style="background-color: blue">I did it!</button></center>
+                                <center><img id="i4" style="display:none" src="http://www.iconsdb.com/icons/download/green/checked-checkbox-512.png" width="50px" height="50px"></center>
+                                
+                            </div>
+                        </div>
+                
+            </div>
+            </div>                
+        </div>
+
+        <div class="jumbotron", style= "background-color: blue"></div>
+        
+    <div class="jumbotron", style= "background-color: #E07816">
+        <h1 style= "font-size: 250%", style= "font-family: Verdana" ><center>My Workout List</center></h1>
+        <center><input id="del" onclick="deleteLast()" style="background-color: blue" type="button" value="DELETE" style="height: 100px; width: 100px; left: 250; top: 250;"></button></center>
+        <center><ul id="list"></ul></center>
+    </div>
+
+        <script>
+            var navProperties = {
+                mainNav: "_nav.html",
+                currentSection: "home"
+            };
+        </script>
+        <script src="dist/bundle.js" >
+        </script>
+        <script src="dist/index.js">
+        </script>
+    </body>
+</html>
